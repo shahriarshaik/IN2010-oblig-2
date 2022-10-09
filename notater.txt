@@ -1,0 +1,21 @@
+til å begynne med vi må implementere fire sorterings algorytmer
+
+2 faste og 2 valgfrie
+
+faste: 
+    - insertion sort
+    - quicksort
+
+valgfrie bestemmer du selv og kan være utenfor pensum
+
+
+det forventes at alle algorytmene skal gi samme output
+
+vi skal lage filer med outputen med format inputfilnavn_alorytme.filtype
+
+alogorytmene må telle:
+    - antall sammenlikninger
+    - antall bytter
+
+hvis det er n heltall så gjør man n + 1 sorteringer
+
