@@ -1,7 +1,14 @@
 import java.io.File;  // Import the File class
 import java.util.Scanner; // Import the Scanner class to read text files
+import java.util.function.IntConsumer;
 
 public class hovedprog {
+
+    void insertion(int sorter[]){
+        System.out.println("gjør ikn rn");
+    }
+
+
     public static void main(String[] args) throws Exception {
 
         //alle filene som variabler
