@@ -1,15 +1,38 @@
 import java.io.File;  // Import the File class
 import java.util.Scanner; // Import the Scanner class to read text files
-import java.util.function.IntConsumer;
 
 public class hovedprog {
 
     void insertion(int sorter[]){
-        System.out.println("gjør ikn rn");
+        Insertion insertion = new Insertion();
+        insertion.A = sorter;
+        insertion.sort();
+        for (int i : insertion.A) {
+            System.out.println(i);
+        }
+    }
+
+    void minQ(int[] sorter){
+        QuickSort minQ = new QuickSort();
+        minQ.sorter = sorter;
+        minQ.quickSort(sorter, 0, sorter.length - 1);
+        for (int i : sorter) {
+            System.out.println(i);
+        }
+    }
+
+    void levereQ(int[] sorter){
+        Quick quick = new Quick();
+        quick.A = sorter;
+        quick.sort();
+        for (int i : quick.A) {
+            System.out.println(i);
+        }
     }
 
 
     public static void main(String[] args) throws Exception {
+        hovedprog hp = new hovedprog();
 
         //alle filene som variabler
         String nearly_sorted_10 = "inputs/nearly_sorted_10";
@@ -73,6 +96,7 @@ public class hovedprog {
             System.out.println("Feil tastetrykk");
         }
     }
+    filvalg.close();
 
         
         //leser antall linjer i filen 
@@ -93,15 +117,19 @@ public class hovedprog {
             peker++;
         }
 
-        InsertionSort InS = new InsertionSort(sorter);
         long startTime = System.nanoTime();
-        InS.sorter();
-        long endTime = System.nanoTime();
-        long duration = (endTime - startTime);
 
-        for (int i : InS.sorter) {
-            System.out.println(i);
-        }
+        //hp.insertion(sorter);
+        //hp.minQ(sorter);
+        hp.levereQ(sorter);
+
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime); 
+
         System.out.println("det tok: " + (duration / 1000000) + " millisekunder");
+        //System.out.println(InS.runStringFormat());
+        //System.out.println(InS.headerString());
+        //System.out.println("antall swaps: "+ InS.swaps);
+        //System.out.println("antall comparisons: "+ InS.comparisons);
     }
 }

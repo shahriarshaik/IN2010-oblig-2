@@ -17,6 +17,8 @@ class Innlevering2Runner {
     // How much n grows each iteration for part 2
     static final int INCREMENT = 1;
 
+
+
     // Run all sorting algorithms and create .out files
     static void runAlgsPart1(int[] A, String infilename) throws Exception {
         for (Sorter alg : ALGS1) {

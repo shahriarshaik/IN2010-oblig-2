@@ -6,6 +6,8 @@ public class QuickSort {
     public QuickSort(int[] sorter){
         this.sorter = sorter;
     }
+    public QuickSort(){
+    }
 
     void swap(int[] sorter, int i, int j){
         int peker = sorter[i];
