@@ -29,6 +29,14 @@ public class hovedprog {
             System.out.println(i);
         }
     }
+    void bubble(int[] sorter){
+        BubbleSort bubble = new BubbleSort();
+        bubble.A = sorter;
+        bubble.sort();
+        for (int i : bubble.A) {
+            System.out.println(i);
+        }
+    }
 
 
     public static void main(String[] args) throws Exception {
@@ -121,7 +129,8 @@ public class hovedprog {
 
         //hp.insertion(sorter);
         //hp.minQ(sorter);
-        hp.levereQ(sorter);
+        //hp.levereQ(sorter);
+        hp.bubble(sorter);
 
         long endTime = System.nanoTime();
         long duration = (endTime - startTime); 
