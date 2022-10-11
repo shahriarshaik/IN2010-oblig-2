@@ -1,9 +1,5 @@
 public class BubbleSort extends Sorter{
-    int[] A;
-    
-    public BubbleSort(int[] A){
-        this.A = A;
-    }
+
     public BubbleSort(){
     }
 
@@ -57,13 +53,15 @@ public class BubbleSort extends Sorter{
     }
 
     // Driver method to test above
-    public static void main(String args[]){
+    public static void main(String args[])
+    {
         BubbleSort ob = new BubbleSort();
         int arr[] = { 64, 34, 25, 12, 22, 11, 90 };
         ob.sort(arr);
         System.out.println("Sorted array");
         ob.printArray(arr);
     }
+
 
     @Override
     String algorithmName() {

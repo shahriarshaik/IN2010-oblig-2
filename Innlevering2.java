@@ -7,7 +7,8 @@ class Innlevering2 {
 
         //fil lese linjer
         //String filename = args[0];
-        String filename = "inputs/eksempelFraPdf";
+        //String filename = "inputs/eksempelFraPdf";
+        String filename = "inputs/random_100";
         File file = new File(filename);
         BufferedReader in = new BufferedReader(new FileReader(file));
 

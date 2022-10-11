@@ -9,9 +9,9 @@ class Innlevering2Runner {
     // The student can adjust these parameters to conduct their experiments
 
     // Put the sorting algorithms under test for part 1 here
-    static final Sorter[] ALGS1 = { new Insertion(), new Quick() };
+    static final Sorter[] ALGS1 = { new Insertion(), new Quick(), new BubbleSort(), new SelectionSort()};
     // Put the sorting algorithms under test for part 2 here
-    static final Sorter[] ALGS2 = { new Insertion(), new Quick() };
+    static final Sorter[] ALGS2 = { new Insertion(), new Quick(), new BubbleSort(), new SelectionSort() };
     // Time limit for a single sorting in milliseconds
     static final long TIME_LIMIT_MS = 100;
     // How much n grows each iteration for part 2
@@ -29,6 +29,7 @@ class Innlevering2Runner {
 
             // Initialize and sort
             alg.initializePart1(A);
+            //alg.A = A;
             alg.sort();
 
             // Write results to file
