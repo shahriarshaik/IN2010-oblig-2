@@ -12,6 +12,7 @@ class Insertion extends Sorter {
             
       //    while (j >= 0 && A[j] > peker){
             while (geq(j, 0) && gt(A[j], peker)){
+                swaps++;
                 A[j + 1] = A[j];
                 j--;
             }
